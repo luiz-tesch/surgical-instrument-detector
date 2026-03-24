@@ -9,8 +9,8 @@ env/
 .venv/
 
 # Data
-data/raw/
-data/processed/
+data/
+!data/.gitkeep
 *.zip
 *.tar.gz
 
