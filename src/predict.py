@@ -36,7 +36,7 @@ if __name__ == "__main__":
         imgsz=args.imgsz,
         device=args.device,
         save=args.save,
-        project="runs/predict",
+        project=str(Path.cwd() / "runs" / "predict"),
     )
 
     for r in results:

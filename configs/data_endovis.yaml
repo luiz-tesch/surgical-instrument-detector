@@ -12,7 +12,7 @@
 #   6: Monopolar Curved Scissors → YOLO class 5
 #   (7: Other — skipped by default in prepare script)
 
-path: ../data/endovis2017
+path: data/endovis2017
 train: train/images
 val: val/images
 test: test/images

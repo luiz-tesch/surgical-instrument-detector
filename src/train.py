@@ -36,7 +36,7 @@ def train(args):
         device=args.device,
         workers=4,
         patience=20,
-        project="runs/train",
+        project=str(Path.cwd() / "runs" / "train"),
         name=args.name,
         plots=True,
         save=True,
