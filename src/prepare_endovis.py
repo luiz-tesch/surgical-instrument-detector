@@ -178,10 +178,10 @@ if __name__ == "__main__":
                         help="Path to endovis2017.zip")
     parser.add_argument("--output", type=Path, default=Path("data/endovis2017"),
                         help="Output directory for prepared dataset")
-    parser.add_argument("--val-folds", type=int, nargs="+", default=[1, 2, 3, 4, 5, 6, 7, 8],
-                        help="Val fold numbers to use for validation (default: 1-8)")
-    parser.add_argument("--test-folds", type=int, nargs="+", default=[9, 10],
-                        help="Val fold numbers to use for test (default: 9-10)")
+    parser.add_argument("--val-folds", type=int, nargs="+", default=[1, 2, 3, 4, 7, 9],
+                        help="Val fold numbers to use for validation")
+    parser.add_argument("--test-folds", type=int, nargs="+", default=[5, 6, 8, 10],
+                        help="Val fold numbers to use for test")
     parser.add_argument("--skip-other", action="store_true", default=True,
                         help="Skip class 7 'Other' (default: True)")
     args = parser.parse_args()
