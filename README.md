@@ -87,6 +87,21 @@ python src/predict.py --weights runs/train/surgical_yolov8/weights/best.pt \
     --source path/to/video.mp4
 ```
 
+## Results
+
+### YOLOv8n — EndoVis 2017 (test set, 100 epochs)
+
+| Class | mAP50 | mAP50-95 |
+|---|---|---|
+| monopolar_curved_scissors | 0.977 | 0.934 |
+| vessel_sealer | 0.969 | 0.890 |
+| large_needle_driver | 0.866 | 0.711 |
+| bipolar_forceps | 0.833 | 0.743 |
+| prograsp_forceps | 0.088 | 0.064 |
+| **all** | **0.747** | **0.668** |
+
+> Work in progress — experimenting with larger models (yolov8s) to improve detection of visually similar instruments (bipolar/prograsp forceps).
+
 ## Hardware
 
 - GPU: NVIDIA GTX 1660 Ti (6GB VRAM)
